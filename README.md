@@ -20,7 +20,7 @@ limitations under the License.
 
 # iterAcovercos
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Create an [iterator][mdn-iterator-protocol] which iteratively computes the [inverse coversed cosine][@stdlib/math/base/special/acovercos].
 
@@ -142,6 +142,24 @@ while ( true ) {
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/math/base/special/acovercos`][@stdlib/math/base/special/acovercos]</span><span class="delimiter">: </span><span class="description">compute the inverse coversed cosine.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/acoversin`][@stdlib/math/iter/special/acoversin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the inverse coversed sine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/avercos`][@stdlib/math/iter/special/avercos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the inverse versed cosine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/covercos`][@stdlib/math/iter/special/covercos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the coversed cosine for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/vercos`][@stdlib/math/iter/special/vercos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the versed cosine for each iterated value.</span>
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -187,8 +205,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-iter-special-acovercos/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-iter-special-acovercos?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/math-iter-special-acovercos.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/math-iter-special-acovercos/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
@@ -201,7 +223,19 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
+<!-- <related-links> -->
+
 [@stdlib/math/base/special/acovercos]: https://github.com/stdlib-js/math-base-special-acovercos
+
+[@stdlib/math/iter/special/acoversin]: https://github.com/stdlib-js/math-iter-special-acoversin
+
+[@stdlib/math/iter/special/avercos]: https://github.com/stdlib-js/math-iter-special-avercos
+
+[@stdlib/math/iter/special/covercos]: https://github.com/stdlib-js/math-iter-special-covercos
+
+[@stdlib/math/iter/special/vercos]: https://github.com/stdlib-js/math-iter-special-vercos
+
+<!-- </related-links> -->
 
 </section>
 
