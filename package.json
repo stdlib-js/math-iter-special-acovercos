@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-iter-special-acovercos",
-  "version": "0.0.0",
+  "version": "0.0.7",
   "description": "Create an iterator which computes the inverse coversed cosine of each iterated value.",
   "license": "Apache-2.0",
   "author": {
