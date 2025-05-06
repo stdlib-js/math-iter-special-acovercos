@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-05-06)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`f51b7b2`](https://github.com/stdlib-js/stdlib/commit/f51b7b2ea5c3cceca335f3089fba079d4290bde7) - **test:** update tests to match valid domain of acovercos _(by Karan Anand)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Karan Anand
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-28)
