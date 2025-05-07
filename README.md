@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-special-acovercos
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterAcovercos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-acovercos@esm/index.mjs';
+var iterAcovercos = require( '@stdlib/math-iter-special-acovercos' );
 ```
 
 #### iterAcovercos( iterator )
@@ -60,20 +78,20 @@ import iterAcovercos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-speci
 Returns an [iterator][mdn-iterator-protocol] which iteratively computes the [inverse coversed cosine][@stdlib/math/base/special/acovercos].
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
-var x = [ 0.0, -3.141592653589793/2.0, -3.141592653589793/6.0 ];
+var x = [ 0.0, 3.141592653589793/2.0, 3.141592653589793/6.0 ];
 var it = iterAcovercos( array2iterator( x ) );
 // returns <Object>
 
 var r = it.next().value;
-// returns ~1.5708
+// returns ~-1.5708
 
 r = it.next().value;
-// returns ~-0.6075
+// returns ~0.6075
 
 r = it.next().value;
-// returns ~0.4966
+// returns ~-0.4966
 
 // ...
 ```
@@ -93,7 +111,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 ## Notes
 
--   The domain of inverse coversed cosine is restricted to `[-2,0]`. If an iterated value is outside of the domain, the returned [iterator][mdn-iterator-protocol] returns `NaN`.
+-   The domain of inverse coversed cosine is restricted to `[0,2]`. If an iterated value is outside of the domain, the returned [iterator][mdn-iterator-protocol] returns `NaN`.
 -   If an iterated value is non-numeric (including `NaN`), the returned [iterator][mdn-iterator-protocol] returns `NaN`. If non-numeric iterated values are possible, you are advised to provide an [`iterator`][mdn-iterator-protocol] which type checks and handles non-numeric values accordingly.
 -   If an environment supports `Symbol.iterator` **and** a provided [iterator][mdn-iterator-protocol] is iterable, the returned [iterator][mdn-iterator-protocol] is iterable.
 
@@ -109,17 +127,12 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import iterAcovercos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-acovercos@esm/index.mjs';
+```javascript
+var uniform = require( '@stdlib/random-iter-uniform' );
+var iterAcovercos = require( '@stdlib/math-iter-special-acovercos' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
-var rand = uniform( -2.0, 0.0, {
+var rand = uniform( 0.0, 2.0, {
     'seed': 1234,
     'iter': 10
 });
@@ -136,10 +149,6 @@ while ( true ) {
     }
     console.log( r.value );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -181,7 +190,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -248,15 +257,15 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/acovercos]: https://github.com/stdlib-js/math-base-special-acovercos/tree/esm
+[@stdlib/math/base/special/acovercos]: https://github.com/stdlib-js/math-base-special-acovercos
 
-[@stdlib/math/iter/special/acoversin]: https://github.com/stdlib-js/math-iter-special-acoversin/tree/esm
+[@stdlib/math/iter/special/acoversin]: https://github.com/stdlib-js/math-iter-special-acoversin
 
-[@stdlib/math/iter/special/avercos]: https://github.com/stdlib-js/math-iter-special-avercos/tree/esm
+[@stdlib/math/iter/special/avercos]: https://github.com/stdlib-js/math-iter-special-avercos
 
-[@stdlib/math/iter/special/covercos]: https://github.com/stdlib-js/math-iter-special-covercos/tree/esm
+[@stdlib/math/iter/special/covercos]: https://github.com/stdlib-js/math-iter-special-covercos
 
-[@stdlib/math/iter/special/vercos]: https://github.com/stdlib-js/math-iter-special-vercos/tree/esm
+[@stdlib/math/iter/special/vercos]: https://github.com/stdlib-js/math-iter-special-vercos
 
 <!-- </related-links> -->
 
